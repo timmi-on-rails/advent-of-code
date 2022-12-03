@@ -2,9 +2,10 @@
 
 This project contains Tom's answers to [Advent of Code 2022](https://adventofcode.com/):
 
+* [Day 1: Calorie Counting](./Day%201)
 * [Day 3: Rucksack Reorganization](./Day%203)
 
-## Howto run the code
+## How to run the code
 
 Each puzzle directory contains one or more `*.mjs` files which can be run with [Node.js](https://nodejs.org/):
 
