@@ -54,14 +54,12 @@ Every set of three lines in your list corresponds to a single group, but each gr
     vJrwpWtwJgWrhcsFMMfFFhFp
     jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
     PmmdzqPrVvPwwTWBwg
-    
 
 And the second group's rucksacks are the next three lines:
 
     wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
     ttgJtRGJQctTZtZT
     CrZsJsPPZsGzwwsLwLmpwMDw
-    
 
 In the first group, the only item type that appears in all three rucksacks is lowercase `r`; this must be their badges. In the second group, their badge item type must be `Z`.
 
