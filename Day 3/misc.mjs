@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-export const getInputLines = () => fs.readFileSync('Input.txt', 'utf-8')
+export const getInputLines = () => fs.readFileSync('input.txt', 'utf-8')
   .split(/\r?\n/)
   .map(line => line.trim())
   .filter(line => line.length > 0);
