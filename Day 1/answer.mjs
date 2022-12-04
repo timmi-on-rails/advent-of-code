@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-export const getInventoriesCalories = () => fs.readFileSync('input.txt', 'utf-8')
+const inventoriesCalories = fs.readFileSync('input.txt', 'utf-8')
   .split(/\r?\n/)
   .map(line => line.trim())
   .reduce(
@@ -13,3 +13,16 @@ export const getInventoriesCalories = () => fs.readFileSync('input.txt', 'utf-8'
     [[]])
   .filter(inventory => inventory.length > 0)
   .map(inventory => inventory.reduce((sum, calory) => sum + calory, 0));
+
+const answerPart1 = inventoriesCalories
+  .reduce((max, calory) => calory > max ? calory : max);
+
+console.log(answerPart1);
+
+const answerPart2 = inventoriesCalories
+  .sort((a, b) => a - b)
+  .reverse()
+  .slice(0, 3)
+  .reduce((sum, calory) => sum + calory, 0);
+
+console.log(answerPart2);
