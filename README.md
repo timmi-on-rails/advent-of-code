@@ -5,6 +5,7 @@ This project contains Tom's answers to [Advent of Code 2022](https://adventofcod
 * [Day 1: Calorie Counting](./Day%201)
 * [Day 2: Rock Paper Scissors](./Day%202)
 * [Day 3: Rucksack Reorganization](./Day%203)
+* [Day 4: Camp Cleanup](./Day%204)
 
 ## How to run the code
 
