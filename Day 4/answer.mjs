@@ -15,11 +15,11 @@ const answerPart1 = pairsOfSectionRanges
     (e1 - e2) / (s2 - s1) > 0)
   .length;
 
-console.log("Part One: " + answerPart1);
+console.log(answerPart1);
 
 const answerPart2 = pairsOfSectionRanges
   .filter(([[s1, e1], [s2, e2]]) =>
     s1 <= e2 && e1 >= s2)
   .length;
 
-console.log("Part Two: " + answerPart2);
+console.log(answerPart2);
