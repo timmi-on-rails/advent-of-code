@@ -6,17 +6,19 @@ const inputLines = fs.readFileSync('input.txt', 'utf-8')
 const movesIndex = inputLines
   .findIndex(line => line.trim().length == 0);
 
-const initialStacks = [
-  '1ZPMHR',
-  '2PCJB',
-  '3SNHGLCD',
-  '4FTMDQSRL',
-  '5FSPQBTZM',
-  '6TFSZBG',
-  '7NRV',
-  '8PGLTDVCM',
-  '9WQNJFML'
-];
+const initialStacks = inputLines
+  .slice(0, movesIndex)
+  .map(line => Array.from(line).reduce(
+    (chunks, char, index) => (index % 4) == 0 ?
+      chunks.concat(char) :
+      [...chunks.slice(0, -1), chunks.at(-1) + char],
+    []))
+  .map(chunks => chunks.map(chunk => chunk.match(/\w/)?.at(0)))
+  .reduce(
+    (stacks, chunks) => chunks.map((chunk, i) =>
+      (stacks[i] || []).concat(chunk)),
+    [])
+  .map(stack => stack.reverse().join(''))
 
 const moves = inputLines
   .slice(movesIndex)
