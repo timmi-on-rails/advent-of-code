@@ -22,9 +22,7 @@ const moves = inputLines
   .slice(movesIndex)
   .map(line => line.trim())
   .filter(line => line.length > 0)
-  .map(line => line
-    .match(/move\s(\d+)\sfrom\s(\d+)\sto\s(\d+)/i)
-    .slice(1, 4));
+  .map(line => line.match(/\d+/ig));
 
 Array.prototype.apply = function (f) {
   return f(this);
