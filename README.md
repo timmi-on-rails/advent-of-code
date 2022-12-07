@@ -8,6 +8,7 @@ This project contains Tom's answers to [Advent of Code 2022](https://adventofcod
 * [Day 4: Camp Cleanup](./Day%204)
 * [Day 5: Supply Stacks](./Day%205)
 * [Day 6: Tuning Trouble](./Day%206)
+* [Day 7: No Space Left On Device](./Day%207)
 
 ## How to run the code
 
