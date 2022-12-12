@@ -12,6 +12,7 @@ This project contains Tom's answers to [Advent of Code 2022](https://adventofcod
 * [Day 8: Treetop Tree House](./Day%208)
 * [Day 9: Rope Bridge](./Day%209)
 * [Day 10: Cathode-Ray Tube](./Day%2010)
+* [Day 11: Monkey in the Middle](./Day%2011)
 
 ## How to run the code
 
